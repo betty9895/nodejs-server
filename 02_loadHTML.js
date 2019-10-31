@@ -12,7 +12,7 @@ fs.readFile('index.html',(err,html)=>{
     else{
         const server=http.createServer((req,res)=>{
             res.statusCode=200;
-            res.setHeader('Conent-type','text/plan');
+            res.setHeader('Conent-type','text/html');
             res.write(html);
             res.end();
         });
